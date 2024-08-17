@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "./UseStateComponent";
+import { StyledButton } from "../UseStateComponent";
 import { FilterType } from "./ComponentForFilter";
 
 type NewMoneyArrayType = {
@@ -26,11 +26,15 @@ export const NewComponentForFilter = (props: NewMoneyType) => {
           </>
         );
       })}
-      <Button onClick={() => props.onClickFilterHandler("all")}>all</Button>
-      <Button onClick={() => props.onClickFilterHandler("dollar")}>
+      <StyledButton onClick={() => props.onClickFilterHandler("all")}>
+        all
+      </StyledButton>
+      <StyledButton onClick={() => props.onClickFilterHandler("dollar")}>
         dollar
-      </Button>
-      <Button onClick={() => props.onClickFilterHandler("ruble")}>ruble</Button>
+      </StyledButton>
+      <StyledButton onClick={() => props.onClickFilterHandler("ruble")}>
+        ruble
+      </StyledButton>
     </ul>
   );
 };

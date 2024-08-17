@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Button } from "./UseStateComponent";
 import { NewComponentForFilter } from "./NewComponentForFilter";
 
 export type FilterType = "all" | "dollar" | "ruble";

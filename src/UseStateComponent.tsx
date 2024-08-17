@@ -14,13 +14,13 @@ export const UseStateComponent = () => {
   return (
     <div>
       <p>{counter}</p>
-      <Button onClick={changeCounterValue}>next</Button>
-      <Button onClick={returnToZero}>zero</Button>
+      <StyledButton onClick={changeCounterValue}>next</StyledButton>
+      <StyledButton onClick={returnToZero}>zero</StyledButton>
     </div>
   );
 };
 
-export const Button = styled.button`
+export const StyledButton = styled.button`
   display: inline-flex;
   justify-content: center;
   align-items: center;
