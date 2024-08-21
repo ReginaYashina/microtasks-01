@@ -3,9 +3,13 @@ import { StyledButton } from "../UseStateComponent";
 
 type ButtonPropsType = {
   name: string;
-  someFunction: () => void;
+  callBack: () => void;
 };
 
 export const Button = (props: ButtonPropsType) => {
-  return <StyledButton onClick={props.someFunction}>{props.name}</StyledButton>;
+  const onClickHandler = () => {
+    props.callBack();
+  };
+
+  return <button onClick={onClickHandler}>{props.name}</button>;
 };
